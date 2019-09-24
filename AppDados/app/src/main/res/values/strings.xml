@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppDados</string>
+    <string name="nome">Nome:</string>
+    <string name="telefone">Telefone:</string>
+    <string name="email">Email:</string>
+    <string name="endereco">Endereço:</string>
+    <string name="dados">DADOS CADASTRADOS</string>
+    <string name="btnCadastrar">Cadastrar</string>
+</resources>

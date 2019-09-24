@@ -1,0 +1,81 @@
+AppCalculos
+
+
+
+principal.java
+
+EditText editValor1, editValor2;
+Button botaoSomar, botaoSubtrair, botaoMultiplicar, botaoDividir;
+
+protected void onCreate (Bundle savedInstanceState){
+	super.onCreate(savedInstanceState);
+	seContentView(R.layout.activity_principal);
+
+	
+	editValor1 = (EditText) findViewById(R.id.edtV1);
+	editValor2 = (EditText) findViewById(R.id.edtV2);
+	botaoSomar = (Button) findViewById(R.id.btnSomar);
+	botaoSubtrair = (Button) findViewById(R.id.btnSubtrair);
+	botaoMultiplicar = (Button) findViewById(R.id.btnMultiplicar);
+	botaoDividir = (Button) findViewById(R.id.btnsDividir);
+
+
+botaoSomar.setOnClickListener(new .View.OnClickListener(){
+	public void onClick(View v){
+	
+	float valor1, valor2, resultado;
+
+	valor1 = Float.parseFloat(editValor1.getText().toString());
+	valor2 = Float.parseFloat(editValor2.getText().toString());
+
+	resultado = valor1 + valor2;
+
+	Toast.makeText(Principal.this, "O resultado é:" +
+	resultado, Toast.LENGTH_LONG).show();
+}
+}};
+
+botaoSubtrair.setOnClickListener(new .View.OnClickListener(){
+	public void onClick(View v){
+	
+	float valor1, valor2, resultado;
+
+	valor1 = Float.parseFloat(editValor1.getText().toString());
+	valor2 = Float.parseFloat(editValor2.getText().toString());
+
+	resultado = valor1 - valor2;
+
+	Toast.makeText(Principal.this, "O resultado é:" +
+	resultado, Toast.LENGTH_LONG).show();
+}
+}};
+
+botaoMultiplicar.setOnClickListener(new .View.OnClickListener(){
+	public void onClick(View v){
+	
+	float valor1, valor2, resultado;
+
+	valor1 = Float.parseFloat(editValor1.getText().toString());
+	valor2 = Float.parseFloat(editValor2.getText().toString());
+
+	resultado = valor1 * valor2;
+
+	Toast.makeText(Principal.this, "O resultado é:" +
+	resultado, Toast.LENGTH_LONG).show();
+}
+}};
+
+botaoDividir.setOnClickListener(new .View.OnClickListener(){
+	public void onClick(View v){
+	
+	float valor1, valor2, resultado;
+
+	valor1 = Float.parseFloat(editValor1.getText().toString());
+	valor2 = Float.parseFloat(editValor2.getText().toString());
+
+	resultado = valor1 / valor2;
+
+	Toast.makeText(Principal.this, "O resultado é:" +
+	resultado, Toast.LENGTH_LONG).show();
+}
+}};

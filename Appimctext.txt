@@ -1,0 +1,86 @@
+AppIMC
+
+principal.java
+
+Button menu, botao1, botao2, botaocalcM, botaocalcH;
+TextView txtMsg;
+EditText altura;
+
+
+protected void OnCreate(Bundle savedInstanceState){
+	super.onCreate(savedInstanceState);
+	setContentView(R.layout.activity_principal);
+
+	menu = (Button)findViewById(R.id.btnMenu);
+	botao1 = (Button)findViewById(R.id.btnTelaMulher);
+	botao2 = (Button)findViewById(R.id.btnTelaHomem);
+	botaocalcM = (Button)findViewById(R.id.btnCalcM);
+	botaocalcH = (Button)findViewById(R.id.btnCalcH);
+	txtMsg = (TextView)findViewById(R.id.txtOi);
+	altura = (EditText) findViewById(R.id.edtAltura);
+
+	txtMsg.setText(R.string.oi);
+
+
+menu.setOnClickListener(new .View.OnClickListener(){
+	public void onClick(View v){
+	if{(
+	botao1.getVisibility()==View.VISIBLE)&&(botao2.getVisibility()==View.VISIBLE))
+	botao1.setVisibility(View.INVISIBLE);
+	botao2.setVisibility(View.INVISIBLE);
+	}else{
+	botao1.setVisibility(View.VISIBLE);
+	botao2.setVisibility(View.VISIBLE);
+	}
+	}
+	}};
+
+
+botao1.setOnClickListener(new .View.OnClickListener(){
+	public void onClick(View v){
+	Intent irTelaM = new Intent(Principal.this,TelaMulher.class);
+	startActivity(irTelaM);	
+	botao1.setVisibility(View.INVISIBLE);
+	botao2.setVisibility(View.INVISIBLE);
+	}
+	}};
+
+botao2.setOnClickListener(new .View.OnClickListener(){
+	public void onClick(View v){
+	Intent irTelaH = new Intent(Principal.this,TelaHomem.class);
+	startActivity(irTelaH);	
+	botao1.setVisibility(View.INVISIBLE);
+	botao2.setVisibility(View.INVISIBLE);
+	}
+	}};
+
+
+botaocalcM.setOnClickListener(new .View.OnClickListener(){
+	public void onClick(View v){
+	
+	float altura, pesoIdeal;
+
+	altura= Float.parseFloat(editValor1.getText().toString());
+	
+
+	pesoIdeal = altura * 62.1;
+
+	Toast.makeText(Principal.this, "O resultado é:" +
+	resultado, Toast.LENGTH_LONG).show();
+}
+}};
+
+botaocalcH.setOnClickListener(new .View.OnClickListener(){
+	public void onClick(View v){
+	
+	float altura, pesoIdeal;
+
+	altura= Float.parseFloat(editValor1.getText().toString());
+	
+
+	pesoIdeal = altura * 72.7;
+
+	Toast.makeText(Principal.this, "O resultado é:" +
+	resultado, Toast.LENGTH_LONG).show();
+}
+}};

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AppMenu</string>
+    <string name="menu">Menu</string>
+    <string name="t2">Tela 2</string>
+    <string name="t3">Tela 3</string>
+</resources>
